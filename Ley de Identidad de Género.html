@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi página de noticias</title>
+    <style>
+      /*Logo de portada y fecha*/
+      .imagen {
+        display: block;
+        margin: 0 auto;
+        max-width: 20%;
+        height: auto;
+      }
+      #fecha {
+        position: absolute;
+        top: 3%;
+        left: 15%;
+        font-size: 1vw;
+      }
+      /*Barra de navegacion*/
+      nav {
+        color: black;
+        width: 100%;
+        border-top: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav li {
+        border-right: 0.5px solid black;
+      }
+      nav li:last-child {
+        border-right: none;
+      }
+      nav li a {
+        display: block;
+        color: black;
+        padding: 0.5vw;
+        text-decoration: none;
+        font-size: 1vw;
+      }
+      nav li a:hover {
+        color: black;
+      }
+      /*contenedor con texto de la noticia*/
+      #contenedor {
+        width: 100%;
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+      }
+      #texto {
+        text-align: left;
+        max-width: 600px;
+      }
+      #texto h1, h2, h3 {
+        margin-top: 0em;
+        margin-bottom: 0em;
+      }
+      #texto h1 {
+        font-size: 20px;
+      }
+      #texto h2 {
+        font-size: 35px;
+        color: #00A9DC;
+      }
+      #texto h3 {
+        font-size: 45px;
+      }
+      #texto p {
+        font-size: 25px;
+      }
+      /*Tabla de noticias*/
+      #tabla_noticias {
+        border: 1px solid black;
+        margin-left: 2%;
+        padding: 0.5%;
+        text-align: center;
+        max-height: 500px;
+        max-width: 300px;
+      }
+      #tabla_noticias h2 {
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+        margin-top: 1px;
+        border-bottom: 1px solid black;
+      }
+      #tabla_noticias .noticia {
+        display: flex;
+      }
+      #tabla_noticias .imagen-noticia {
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+        margin-right: 5px;
+      }
+      #tabla_noticias .texto-noticia {
+        font-size: 15px;
+      }
+      /*Separador con fecha y redes*/
+      #Redes {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-top: 1em;
+        padding: 0em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #Redes .fecha p {
+        font-size: 1em;
+      }
+      #Redes .logo img{
+        margin-right: 13em;
+        width: 30px;
+        height: 30px;
+      }
+      #Redes .iconos {
+        display: flex;
+        align-items: center;
+      }
+      #Redes .iconos a {
+        margin-right: 1em;
+      }
+      #Redes .iconos img {
+        width: 25px;
+        height: 25px;
+      }
+      /*footer*/
+      #datos {
+        max-width: 100%;
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+        background-color: #E9ECEF;
+      }
+      #texto_datos p{
+        text-align: center;
+        max-width: 600px;
+      }
+      #footer {
+        border-top: 1px solid black;
+        text-align: center;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fecha">Rosario, miércoles 10.05.2023</div>
+    <a href="">
+      <img src="https://www.elciudadanoweb.com/wp-content/themes/elciudadano/images/logo.svg" alt="" class="imagen">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">El Hincha</a></li>
+        <li><a href="#">Policiales</a></li>
+        <li><a href="#">Ciudad</a></li>
+        <li><a href="#">Espectaculos</a></li>
+        <li><a href="#">Politica</a></li>
+        <li><a href="#">Economia</a></li>
+        <li><a href="#">Mundo</a></li>
+        <li><a href="#">Pais</a></li>
+        <li><a href="#">Region</a></li>
+        <li><a href="#">Gremiales</a></li>
+        <li><a href="#">Observatorio</a></li>
+        <li><a href="#">Sociedad</a></li>
+        <li><a href="#">Empresas</a></li>
+        <li><a href="#">La cazadora</a></li>
+        <li><a href="#">Suplementos</a></li>
+      </ul>
+    </nav>
+      <div id="contenedor">
+        <div id="texto">
+          <h1>Ciudad</h1>
+          <h2>Informe del Renaper</h2>
+          <h3>Ley de Identidad de Género: unas 1.500 personas en Santa Fe rectificaron su identidad en el DNI</h3>
+          <p>Al analizar la edad del total de las personas que realizaron el trámite de rectificación registral, se observa que se trata de una población mayoritariamente joven adulta, ya que casi el 55% de la población lo realizó entre los 18 y los 29 años, siendo el promedio de edad de 28 años</p>
+          <div id="Redes">
+            <div class="fecha">
+              <p>10 de mayo de 2023 - 18:53</p>
+            </div>
+            <div class="logo">
+              <img src="http://www.elciudadanoweb.com/wp-content/uploads/2021/10/El-Ciudadano-96x96.jpg" alt="Logo">
+            </div>
+            <div class="iconos">
+              <a href="#">
+                <img src="https://cdn.discordapp.com/attachments/931390987161448508/1106084907454824469/apps.png" alt="Twitter">
+              </a>
+              <a href="#">
+                <img src="https://cdn.discordapp.com/attachments/931390987161448508/1106085474134663258/XGehZ_9v_400x400.jpg" alt="Facebook">
+              </a>
+              <a href="#">
+                <img src="https://cdn.discordapp.com/attachments/931390987161448508/1106086193726238791/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI.png" alt="Gmail">
+              </a>
+              <a href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWNMHX6faWZgVks3B42p4w0LU1nizBYJysQ" alt="Wsp">
+              </a>
+            </div>
+          </div>
+          <div id="contenido">
+            <div id="texto">
+              <img src="https://cdn.discordapp.com/attachments/931390987161448508/1106089298035486771/Sin_titulo.png" alt="">
+              <p>La Dirección Nacional de Población -DNP, dependiente del Ministerio del Interior, a cargo de Wado de Pedro-, confeccionó un informe que detalla la caracterización sociodemográfica de las personas que hasta el momento realizaron el trámite de rectificación de género en su DNI, a 11 años de la sanción de la Ley de Identidad de Género. Entre los datos más llamativos del estudio se destaca el hecho de que, desde su sanción, dicho marco legal permitió que 16.090 personas rectificaran su identidad; y que, en la actualidad, 34 de cada 100 mil habitantes tienen rectificado su DNI, siendo la Ciudad de Buenos Aires la que presenta el mayor porcentaje de habitantes que realizó el trámite de cambio de género (62 personas cada 100 mil habitantes).</p>
+              <p>El estudio de la DNP -dependiente del Registro Nacional de las Personas (Renaper)- revela además que, en lo relativo a elección de género, el 56,95% de las personas que rectificaron su DNI optó por la categoría “Mujer”, mientras que el 36,56% lo hizo por la opción “Varón”. Además, desde la sanción del decreto N° 476/21 -de julio de 2021- que habilitó el DNI no binario, 1.044 personas realizaron los trámites de rectificación registral por fuera del binomio masculino/femenino, optando por la nomenclatura “X”.</p>
+              <p>Al analizar la edad del total de las personas que realizaron el trámite de rectificación registral, se observa que se trata de una población mayoritariamente joven adulta, ya que casi el 55% de la población lo realizó entre los 18 y los 29 años, siendo el promedio de edad de 28 años.</p>
+              <p>Al analizar la edad del total de las personas que realizaron el trámite de rectificación registral, se observa que se trata de una población mayoritariamente joven adulta, ya que casi el 55% de la población lo realizó entre los 18 y los 29 años, siendo el promedio de edad de 28 años.</p>
+              <p>Asimismo, el informe detalla que quienes optaron por el género “Varón” lo hacen en edades más tempranas en relación con los demás géneros analizados. Casi el 19% de las personas que eligieron el género masculino realizaron la rectificación siendo menores de edad, mientras que entre las personas que eligieron el género no binario, el 10,25% lo hizo antes de alcanzar la mayoría de edad, y solo el 3,40% de las personas que eligieron el género femenino lo hicieron en el rango etario inferior a 17 años.</p>
+              <p><strong>LA LEY DE IDENTIDAD DE GÉNERO IMPULSÓ LAS RECTIFICACIONES</strong></p>
+              <p>En otro de los apartados, el estudio se enfoca en la cantidad de trámites de rectificación registral, observándose que previo a la normativa legal se realizaron 45 trámites, que sirvieron como antecedentes de la Ley de Identidad de Género -sancionada en 2012-; mientras que, más avanzado en el tiempo, en 2022, se registró el mayor volumen de trámites de cambio de género desde la implementación de la ley (637 trámites). En tanto que, en lo que va de 2023, ya se han realizado 183 cambios.</p>
+              <p>Asimismo, aclara que durante los años 2011 y 2017 entre el 70% y 80% de las rectificaciones realizadas por año eran por cambios a género “Mujer”, mientras que a partir de 2018 entre un 45% y 58% de los trámites realizados corresponden a cambios por la categoría “Varón”, lo que representó un incremento del 113% en comparación con el año anterior.</p>
+              <p>Complementariamente, y según señala el informe, con la sanción del decreto 476/2021 (que posibilitó la rectificación registral fuera del binomio masculino/femenino), durante 2021 se realizaron 224 cambios, lo que representó el 9,4% del total de trámites realizados; mientras que en 2022 se realizaron 637 trámites -equivalente al 19,3% del total de trámites-; y en lo que va de 2023 ya se han realizado 183 cambios, lo que representa el 23,3% del total de trámites realizados.</p>
+              <p><strong>LA PROVINCIA DE BUENOS AIRES, EN EL PODIO DE LAS RECTIFICACIONES</strong></p>
+              <p>En cuanto al lugar de residencia de las personas que realizaron el trámite de cambio de género en su DNI, se destaca que el 99,04% (15.935 en total) reside en Argentina; mientras que el 0,96% (155) residió o reside en el exterior.</p>
+              <p>A su vez, entre las personas con residencia en Argentina, el estudio detalla que la mayoría tiene o tenía residencia en la Provincia de Buenos Aires (36,08%); seguida por el 12,35% en la Ciudad Autónoma de Buenos Aires (CABA); el 8,37% en Santa Fe; y el 8,19% en Córdoba. En menor medida, el 4,13% de las personas tiene o tenía residencia en Salta, el 3,82% en Tucumán; y el 3,31% en Mendoza; mientras que el 23,75% reside o residía en otras provincias.</p>
+              <p>En el mismo sentido, el informe revela que la mayoría de las personas que realizaron el trámite de rectificación registral residen o residían en los grandes centros urbanos de Argentina. El AMBA concentra al 39,12% del total de personas con residencia en el país, siendo mayor la proporción de las personas que optaron por el género no binario (52,11%), seguido por las que eligieron el género “Varón” (43,83%) y las del género “Mujer” (34,61%).</p>
+              <p>Actualmente, 34 de cada 100 mil habitantes tienen el DNI rectificado acorde a la Ley de Identidad de Género, siendo la Ciudad de Buenos Aires la que presenta la mayor cantidad de habitantes que realizaron el cambio de género (casi 62 personas cada 100 mil habitantes); seguida por las provincias de Tierra del Fuego y Santa Cruz (con 50 y 45 personas cada 100 mil habitantes, respectivamente); y La Rioja y Salta (44 personas cada 100 mil habitantes en cada provincia).</p>
+              <p><strong>CARACTERIZACIÓN DE LAS PERSONAS VIVAS</strong></p>
+              <p>El informe analiza además la edad actual de las personas vivas que cambiaron de género en su DNI. En este punto, detalla que se trata de una población joven adulta, siendo el promedio de edad de 32 años, en tanto la edad más frecuente para realizar el cambio es de 19 años, mientras que la mitad de la población tiene menos de 30.</p>
+              <p>Por otra parte, al analizar los grupos etarios de este grupo, se observa que quienes tienen hasta 19 años optaron principalmente por la categoría “Varón” al realizar la rectificación (70,74% de las personas comprendidas en este rango); mientras que, a medida que avanza la edad, las personas que realizaron la rectificación lo hicieron en mayor medida por la categoría “Mujer” (85,06% de las personas de 40 años o más).</p>
+              <p>Por último, el informe señala que, entre las 396 personas que realizaron el cambio de género en su DNI y ya fallecieron, el promedio de edad de fallecimiento es de 44 años, y el 75% de ellas murió antes de los 53 años.</p>
+              <p><strong>QUÉ SUCEDE CON LAS PERSONAS EXTRANJERAS</strong></p>
+              <p>En este punto, la investigación de la DNP señala que el 2,49% de las personas que rectificaron su DNI son o eran extranjeras (401 trámites). De ellas, el 86,28% eligió la categoría “Mujer”, y más de la mitad de ellos residen en la Ciudad de Buenos Aires (53,62%); mientras que el 37,16% vive en la Provincia de Buenos Aires; y sólo el 9,22% en el resto del país.</p>
+              <p><strong>SOBRE EL INFORME DE LA DNP</strong></p>
+              <p>La Dirección Nacional de Población -dependiente del Renaper, organismo a cargo del Ministerio del Interior que conduce Wado de Pedro- tiene entre sus objetivos generar investigaciones en torno a las dinámicas sociodemográficas de Argentina.</p>
+              <p>En este sentido avanza este informe, titulado “Caracterización sociodemográfica de las personas que realizaron el trámite de rectificación registral, en el marco de la Ley de Identidad de Género”, cuyo objetivo central es “conocer el perfil sociodemográfico de la población” que llevó a cabo este trámite, desde la implementación de la Ley de Identidad de Género en 2012 hasta la actualidad.</p>
+              <p>El citado informe persigue además, entre otros objetivos, identificar la edad en que las personas realizan el cambio de identidad de género en su DNI; y describir la distribución geográfica de esta población.</p>
+              <p>El Renaper, en tanto, es el organismo descentralizado que funciona en la órbita de la Secretaría del Interior del Ministerio del Interior, y que tiene como objetivo primordial garantizar el derecho a la identidad e identificación de todas las personas mediante la emisión del Documento Nacional de Identidad (DNI).</p>
+              <p>El DNI posibilita a los habitantes de Argentina el acceso a innumerables derechos civiles, políticos, sociales y laborales. En este sentido, a partir de la sanción de la Ley de Identidad de Género, ese reconocimiento se amplía a aquellas personas que pretenden la modificación de su sexo, de acuerdo a su identidad de género autopercibida.</p>
+              <p>Nuestro país se erigió así como una referencia jurídica internacional por estar a la vanguardia en el reconocimiento de la identidad de género, ya que no exige a la persona ningún diagnóstico médico ni orden judicial para realizar la rectificación de género en su DNI.</p>
+              <p>El marco legal actual establece que toda persona tiene el derecho de ser identificada de acuerdo con su identidad de género autopercibida, y mediante un simple procedimiento administrativo puede modificar el nombre, la imagen y el género en su DNI, de manera personal y gratuita.</p>
+            </div>
+          </div>
+        </div>
+        <div id="tabla_noticias">
+          <h2>Las más leídas</h2>
+          <div class="noticia">
+            <img src="https://www.elciudadanoweb.com/wp-content/uploads/2023/05/morfi-burguerjpgqq-150x150.jpg" alt="" class="imagen-noticia">
+            <div class="texto-noticia">
+              <p>Exfutbolista trae a Rosario una conocida cadena de hamburguesas bonaerense: en qué barrio abrirá</p>
+            </div>
+          </div>
+          <hr>
+          <div class="noticia">
+            <img src="https://www.elciudadanoweb.com/wp-content/uploads/2023/05/acamion-1-150x150.jpg" alt="" class="imagen-noticia">
+            <div class="texto-noticia">
+              <p>Cargill remata dos camionetas a 2 millones de pesos cada una</p>
+            </div>
+          </div>
+          <hr>
+          <div class="noticia">
+            <img src="https://www.elciudadanoweb.com/wp-content/uploads/2023/05/JJG_96392-150x150.jpg" alt="" class="imagen-noticia">
+            <div class="texto-noticia">
+              <p>De madrugada, asesinaron a balazos a un pibe de 15 años en barrio La Cerámica</p>
+            </div>
+          </div>
+          <hr>
+          <div class="noticia">
+            <img src="https://www.elciudadanoweb.com/wp-content/uploads/2023/05/aplazo-1-1-150x150.jpg" alt="" class="imagen-noticia">
+            <div class="texto-noticia">
+              <p>La maniobra que permite ganar hasta 200% anual con un plazo fijo: gurú revela la fórmula</p>
+            </div>
+          </div>
+          <hr>
+          <div class="noticia">
+            <img src="https://www.elciudadanoweb.com/wp-content/uploads/2023/05/rial-150x150.jpg" alt="Descripción de la imagen" class="imagen-noticia">
+            <div class="texto-noticia">
+              <p>Jorge Rial llegó a la Argentina en un avión sanitario y define su continuidad en los medios </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="datos">
+        <div id="texto_datos">
+          <p>Redacción: Santiago 34, Rosario, Santa Fe, Argentina.</p>
+          <p>Contacto: +54 (0341) 435 3798 / 238 9448 Movil: +54 (0341) 156 707909</p>
+          <p>Propiedad de La Cigarra, Cooperativa de Trabajo Limitada.</p>
+          <p>Matrícula Nacional Nº 55984 / Matrícula Provincial Nº 3707</p>
+          <p>Comercial: comercial@elciudadanoweb.com</p>
+          <p>ventas@elciudadanoweb.com</p>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="texto_footer">
+          <p>Todos los derechos reservados © 2023</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
